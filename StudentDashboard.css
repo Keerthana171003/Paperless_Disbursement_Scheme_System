@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Global styles for the dashboard container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    max-width: 600px; /* Set a fixed width for the container */
+    margin: 0 auto; /* Center the container */
+    background: #90533b;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: auto; /* Add scroll if content overflows */
+  }
+
+  roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .dashboard-header {
+    color: #DA9836;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* Student details section */
+  .student-details {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px; /* Add margin to separate from content below */
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .student-picture {
+    margin-right: 20px; /* Space between picture and details */
+  }
+  
+  .student-picture img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .student-info {
+    flex: 1; /* Allow the details section to take up the remaining space */
+  }
+  
+  .student-info p {
+    margin: 5px 0;
+  }
+  
+  /* Content section */
+  .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Styling for each section of the dashboard */
+  .dashboard-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+    color: #90533b;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    flex: 1 1 calc(50% - 10px); /* Adjust width to fit side by side */
+  }
+  
+  /* Section headers */
+  .dashboard-section h2 {
+    margin: 0;
+    color: #90533b;
+    border-bottom: 2px solid #90533b;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #e9e9e9;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+  }
+  
+  /* Progress bar styling */
+  .progress-bar {
+    background: #e0e0e0;
+    border-radius: 4px;
+    height: 15px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .progress {
+    background: #DA9836;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-content {
+      flex-direction: column;
+    }
+  
+    .dashboard-section {
+      flex: 1 1 100%;
+    }
+  }
+  
